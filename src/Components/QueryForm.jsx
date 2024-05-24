@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../index.css';
+import Icons from '../images/icons.png'
 
 const QueryForm = () => {
     const [query, setQuery] = useState('');
@@ -18,6 +19,10 @@ const QueryForm = () => {
 
     return (
         <div className="container">
+
+        <div>
+            <img src={Icons} alt="Logo" className='icons' />
+            </div>
             <h1>Book trusted help for home tasks</h1>
             <div className="search-bar">
                 <input
@@ -46,6 +51,13 @@ const QueryForm = () => {
                 </button>
             </div>
             {result && <pre className="result">{JSON.stringify(result, null, 2)}</pre>}
+
+            <div>
+                <p className='introParagraph'>
+                    Use Artifical Intelligence to help you find tailored services for you and your home maintanencae. 
+                    Anywhere, anytime. 
+                </p>
+            </div>
         </div>
     );
 };

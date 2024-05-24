@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import QueryForm from './Components/QueryForm';
 
@@ -9,5 +8,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
